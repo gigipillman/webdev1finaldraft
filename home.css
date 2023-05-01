@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*header, footer, buttons*/
+header{
+    padding: 1em;
+    font-family: 'Poltawski Nowy', serif;
+  }
+  
+  footer{
+      padding: 1em;
+      text-align: center;
+  }
+
+button{
+    background-color: pink;
+    padding: .25em 1.4em;
+    border: .15em solid black;
+}
+
+/*basic formating*/
+body{
+    background-color: rgb(233, 220, 247);
+
+}
+
+body{
+    max-width: 50rem;
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+    background-color: rgb(233, 220, 247);
+}
+
+img{
+    object-fit: cover;
+    width: 400px;
+    height: 500px;
+    width:100%; 
+}
+

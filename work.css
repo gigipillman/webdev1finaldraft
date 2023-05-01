@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+button{
+    background-color: pink;
+    padding: .25em 1.4em;
+    border: .15em solid black;
+}
+
+body{
+    max-width: 50rem;
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+    background-color: rgb(233, 220, 247);
+}
+
+header{
+  padding: 1em;
+  font-family: 'Poltawski Nowy', serif;
+}
+
+footer{
+    padding: 1em;
+    text-align: center;
+}
+
+main{
+    flex-grow: 1;
+}
+
+.gallery{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(min(300px, 100%),1fr));
+   
+}
+
+img{
+    object-fit: cover;
+    width: 400px;
+    height: 300px;
+  width:100%;
+  border: .3em solid black;
+  padding: .5em;
+ 
+}
+
+.item {
+    position: relative;
+}
+
+.overlay {
+    background-color: rgba(192, 176, 209, 0.678);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.25rem;
+    color: black;
+
+    opacity: 0;
+    transition: opacity .25s;
+}
+
+.item:hover .overlay {
+    opacity: 1;
+    font-family: 'Cinzel', serif;
+
+}
