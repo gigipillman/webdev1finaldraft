@@ -15,10 +15,17 @@ header{
       text-align: center;
   }
 
-button{
+  button{
     background-color: pink;
     padding: .25em 1.4em;
+    margin: .5em;
     border: .15em solid black;
+    transition:.3s ease-in 0s;
+}
+
+button:hover{
+    cursor: pointer;
+    transform: scale(1.3);
 }
 
 /*basic formating*/
